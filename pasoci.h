@@ -13,6 +13,7 @@
 #include <cstdio>
 #include <cstdint>
 #include <vector>
+#include <string>
 #include <cstdlib>
 
 typedef std::int32_t longint;
@@ -22,7 +23,7 @@ typedef std::int16_t word;
 typedef std::int8_t byte;
 typedef std::string ansistring;
 typedef bool boolean;
-
+typedef std::string string;
 namespace pasoc {
     std::vector<longint*> st;
     int bst = 0;
@@ -40,14 +41,15 @@ namespace pasoc {
 #define write(a) std::cout << (a)
 #define writeln(a) std::cout << (a) << std::endl
 #define inc(a) (a)++
-#define For(i) pasoc::st.push_back(&(i)); for(;
-#define to *pasoc::st.back() <=
+#define For pasoc::st.push_back(&(
+#define to )); for(; *pasoc::st.back() <=
 #define do  || pasoc::__st_pop_back(); (*pasoc::st.back())++)
 #define Or ||
 #define And &&
 #define If if(
 #define then )
 #define Procedure void
+
 
 
 #endif

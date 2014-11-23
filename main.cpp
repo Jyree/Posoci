@@ -3,10 +3,10 @@
 Program
 begin
     longint i = 1;
-    For(i) to 100 do
+    For i to 100 do
     begin
         longint j = 1;
-        For(j) to 100 do
+        For j to 100 do
             If i == j Or i*i == j then
                 writeln(i*j);
     end;
